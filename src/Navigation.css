@@ -1,0 +1,118 @@
+.navButtonStyle{
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navButtonStyle:hover, .navButtonStyle1:hover{
+    background-color: blue;
+    color:white;
+    transform: scale3d(1.1, 1.1, 0.5);
+
+}
+
+.navButtonStyle1{
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav{
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: white;
+    text-align:start;
+    align-content: center;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    position:fixed;
+    width: 1500px;
+    z-index: 1000;
+}
+
+.lbl{
+    font-size: medium;
+}
+
+.searchBar{
+    border-radius: 0px;
+    height: 40px;
+    width : 400px;
+    display: flex;
+    font-size: large;border-color: white;
+    background-color: white;
+
+}
+.body{
+    display: block;
+}
+
+.icon{
+    width : 30px;
+    height : 30px;
+    background-color: transparent;
+    
+}
+.IconBtn{
+    background-color: whitesmoke;
+    cursor: pointer;
+    border :none;
+}
+
+.input{
+    width: 400px;
+    height: 100%;
+    font-size: medium;
+    outline: none;
+    border:none;
+    background-color: whitesmoke;
+}
+.box{
+    background-color: white;
+    display: flex;
+    width: 400px;
+    outline: none;
+}
+
+.logo{
+    width : 200px;
+    height : 40px;
+    background-color: white;
+}
+
+.logoBtn{
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    border :none;
+    margin-right: 10px;
+}
+
+.divBtn{
+    align-items: center;
+    margin-left: 60px;
+    justify-content: center;
+    display: flex;
+}
+
+.icon1{
+    width: 20px;
+    height: 20px;
+}

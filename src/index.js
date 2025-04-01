@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Welcome from './welcome';
+import Button1 from './myShop';
+import Card from './card';
+import "./card.css";
+import Navigation from './Navigation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
+    {/* <div className='card-container'>
+      {[...Array(5)].map((_, i) => (
+          <Card key={i} />
+        ))}
+        </div> */}
   </React.StrictMode>
 );
 

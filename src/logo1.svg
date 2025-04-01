@@ -1,0 +1,11 @@
+<svg width="350" height="100" viewBox="0 0 250 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Shopping Cart Icon -->
+  <path d="M30 30h60l-6 36H36L30 30z" stroke="#007BFF" stroke-width="8" fill="none" stroke-linejoin="round" />
+  <circle cx="40" cy="80" r="6" fill="#FF8C00" />
+  <circle cx="80" cy="80" r="6" fill="#FF8C00" />
+  
+  <!-- MyShop Text -->
+  <text x="110" y="60" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#333">
+    MyShop
+  </text>
+</svg>

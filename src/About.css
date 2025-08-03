@@ -1,5 +1,45 @@
 .container{
-    top : 100px;
-    position:absolute;
-    display: block;
+    top : 70px;
+    position: relative;
+    display:block;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.head{
+    background-color: green;
+    color : white;
+}
+
+
+.greenbtn{
+    background-color : green;
+    margin-right: 30px;
+    color: white;
+    border-style: none;
+    width: 70px;
+    height: 30px;
+
+}
+
+.redbtn{
+    background-color : red;
+    color: white;
+    border-style: none;
+    width: 70px;
+    height: 30px;
+}
+
+.redbtn:hover{
+    background-color: darkred;
+}
+
+.greenbtn:hover{
+    background-color: darkgreen;
 }

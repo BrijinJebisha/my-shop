@@ -1,20 +1,20 @@
 import "./Navigation.css";
-import search from "./searchIcon.png";
 import login from "./Login.png";
 import logo from "./logo1.svg";
 import Welcome from "./welcome";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Modal from './loginModal'; // 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import NavSearch from "./Search";
 
 function Navigation()
 {
 
-    const [message, setMessage] = useState("");
+    // const [message, setMessage] = useState("");
 
-    const handleClick = () => {
-        setMessage("Hi, How Are You?");
-    };
+    // const handleClick = () => {
+    //     setMessage("Hi, How Are You?");
+    // };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,38 +29,24 @@ function Navigation()
 
     return(
     <div className="nav">
-        <Link type="button" className="logoBtn" onClick={handleClick}> 
+        <Link type="button" className="logoBtn" to="/" > 
             <img src={logo} alt="Logo" className="logo"/>
         </Link>
         
-        <div className="searchBar">
-            <div className="box">
-                <form>
-                    <input type="search" title="search" placeholder="Search..." className="input"/>
-                </form>
-            </div>
-            <div className="box">
-                <button type="submit" className="IconBtn">
-                    <img alt="search" src={search} className="icon" />
-                </button>
-            </div>
-            
-        </div>
+        <NavSearch/>
+
         <div className="divBtn">
-            <button type="button" className="navButtonStyle">
-                <Link className="navButtonStyle" style={{ textDecoration: 'none' }} to="/Card">Menu</Link>
-            </button>
-            <button type="button" className="navButtonStyle">Help</button>
-            <button type="button" className="navButtonStyle1">
+            <Link className="navButtonStyle" style={{ textDecoration: 'none' }} to="/SpinnerBtn">Menu</Link>
+            <Link className="navButtonStyle" style={{ textDecoration: 'none' }} to="/help">Help</Link>
+            <button type="button" className="navButtonStyle1" onClick={openModal}>
                 <img src={login} alt="login" className="icon1" onClick={openModal}/>
-                <Modal isOpen={isModalOpen} onClose={closeModal} />
-                <label> Login</label>
+                <span> Login</span>
             </button>
-            <Link style={{ textDecoration: 'none' }} className="navButtonStyle" to="./About">About</Link>
+            <Link style={{ textDecoration: 'none' }} className="navButtonStyle" to="/DataTable">About</Link>
              
         </div>
-        
-        {message && <p>{message}</p>}
+        <Modal isOpen={isModalOpen} onClose={closeModal} />
+        {/* {message && <p>{message}</p>} */}
     </div>
     );
     

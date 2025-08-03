@@ -1,0 +1,80 @@
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+.modal-link{
+  font-size: small;
+  text-align: right;
+}
+
+.modal-content{
+  text-align:left;
+  font-size: medium;
+  font-weight:bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.modal-content input {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content label {
+  width: 160px;
+  text-align: left;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.greenbtn{
+    background-color : green;
+    margin-right: 30px;
+    color: white;
+    border-style: none;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.redbtn{
+    background-color : red;
+    color: white;
+    border-style: none;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}

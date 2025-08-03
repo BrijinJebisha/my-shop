@@ -1,0 +1,10 @@
+.loginBtn{
+    background-color: #4caf50;
+    width: 100px;
+    height:50px;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 5px #2e7d32;
+}
+

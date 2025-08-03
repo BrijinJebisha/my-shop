@@ -39,7 +39,7 @@ export function Button()
     return(
     <div >
         <button className="buttonStyle" onClick={handleClick}>click me</button>
-        {message && <p>{message}</p>}
+        {/* {message && <p>{message}</p>} */}
     </div>
     );
 }

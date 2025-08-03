@@ -7,6 +7,22 @@
   pointer-events: none;
 }
 
+/* html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 80px 15px 20px; /* Add top padding to avoid content being hidden behind fixed navbar 
+  width: 100%;
+  box-sizing: border-box;
+} */
+
+
 .nav1{
   font-size: xx-large;
   font-weight: bold;
